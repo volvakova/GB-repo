@@ -177,8 +177,10 @@
     text-align: center;
     text-transform: uppercase;
     color: white;
+    margin-top: 105px;
 }
-.offers__title{
+
+.offers__title {
     font-family: Lato;
     font-size: 16px;
     line-height: 19px;
@@ -189,6 +191,19 @@
 
 
 /*Items*/
+
+.items__title {
+    font-family: Lato;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.items__subtitle {
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+}
 
 .items__card {
     float: left;
