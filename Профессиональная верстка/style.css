@@ -1,9 +1,9 @@
-:root{
+:root {
     --orange: #ff6a6a;
 }
 
-*, 
-*::after, 
+*,
+*::after,
 *::before {
     box-sizing: border-box;
 }
@@ -15,7 +15,8 @@
     padding-top: 30px;
     position: fixed;
 }
-.navbar__nav.open{
+
+.navbar__nav.open {
     position: fixed;
     right: 0;
     width: 232px;
@@ -67,7 +68,7 @@
     max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
-    background-color: beige;
+    background-color: ;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -88,6 +89,7 @@
 .intro__foto {
     max-height: 100%;
     width: auto;
+    background-color: #F8F8F8;
 }
 
 .intro__brand {
@@ -131,6 +133,61 @@
 }
 
 
+/*Offers*/
+
+.for__wrapper {
+    width: 1140px;
+    margin-top: 64px;
+}
+
+.forwomen {
+    float: left;
+    width: 360px;
+    height: 260px;
+    background-image: url(img/forwomen.png);
+    margin-right: 30px;
+}
+
+.formen {
+    float: left;
+    width: 360px;
+    height: 260px;
+    background-image: url(img/formen.png);
+    margin-right: 30px;
+}
+
+.forkids {
+    float: left;
+    width: 360px;
+    height: 260px;
+    background-image: url(img/forkids.png);
+}
+
+.foraccesor {
+    width: 1140px;
+    height: 180px;
+    background-image: url(img/foraccsesuar.png);
+    margin-top: 30px;
+}
+
+.offers__suptitle {
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+.offers__title{
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: pink;
+}
+
+
 /*Items*/
 
 .items__card {
@@ -138,7 +195,8 @@
     width: 360px;
     height: 581px;
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
+    margin: 10px;
 }
 
 .card__img {
@@ -150,7 +208,7 @@
 
 .card__caption {
     padding: 20px 29px 20px 17px;
-    background: #f8f8f8f;
+    background: #f8f8f8;
 }
 
 .card__name {
