@@ -304,6 +304,7 @@
 .d-flex {
     display: flex;
     height: 40px;
+    justify-content: center;
 }
 
 input {
@@ -355,7 +356,9 @@ input {
 
 
 /*Footer*/
-
+.foot__fig_wrapper{
+    margin-right: 230px;
+}
 .footer__wrapper {
     width: 100%;
     height: 79px;
@@ -363,6 +366,8 @@ input {
 }
 
 .foot__fig {
+    display: flex;
+    justify-content: center;
     margin-top: 24px;
     margin-left: 3px;
     margin-right: 4px;
@@ -410,41 +415,97 @@ input {
 
 
 /*Cards*/
-.card__navbar{
+
+.card__navbar {
     display: flex;
     justify-content: space-around;
     margin-top: 51px;
     margin-bottom: 54px;
 }
 
-.pagination{
+.pagination {
     display: flex;
     justify-content: center;
 }
+
 
 /*Product*/
 
 
 /*Caurusel*/
 
-.section__carousel{
+.section__carousel {
     width: 100%;
     height: 777px;
     background-image: url(img/foto_caurusel.png);
     background-size: cover;
     background-color: #F7F7F7;
     background-blend-mode: darken;
-    display: flex;
-    align-items: center;
 }
 
-.choose__card{
+.choose__card {
+    z-index: 3;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     align-content: center;
-    margin-top: 100px;
-    width: 1141px;
-    height: 601px;
-    background-color: darkgray;
+    margin-left: 230px;
+    margin-right: 230px;
+    margin-top: -60px;
+    max-width: 1141px;
+    max-height: 601px;
+    background-color: #FFFFFF;
+}
+
+.sup_title__choose {
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5E5E5E;
+}
+
+.title_red {
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    margin-bottom: 12px;
+    margin-top: 64px;
+}
+
+.title__choose {
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 38px;
+}
+
+.choose__nav {
+    margin-top: 65px;
+    margin-bottom: 48px;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+
+.choose_price {
+    margin-bottom: 50px;
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 29px;
+    color: #EF5B70;
+}
+.btn{
+    width: 211px;
+    height: 47px;
+    margin-bottom: 100px;
 }
