@@ -323,13 +323,15 @@
 
 /*For enter button*/
 
-.d-flex {
+.d-flex { /*d-flex это стандартный класс в bootstrap, который не содержит дополнительных правил типа высоты и justify-content. Лучше переименовать класс*/
   display: flex;
   height: 40px;
   justify-content: center;
 }
 
-input {
+
+
+input { /*Все поля ввода в cart сломались потому что к ним применяется этот набор правил*/
   border-radius: 20px 0 0 20px;
   border: none;
   background: #e1e1e1;
