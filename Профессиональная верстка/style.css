@@ -29,6 +29,7 @@
 
 .navbar__wrapper {
     width: 100%;
+    display: flex;
     max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
@@ -48,13 +49,17 @@
 .text--pink {
     color: pink;
 }
-
+.spacer{
+    
+}
 
 /*atomar end*/
 
 .navbar__icon {
-    width: 40px;
-    height: 40px;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    height: 70%;
 }
 
 .navbar__icon.float-left {
