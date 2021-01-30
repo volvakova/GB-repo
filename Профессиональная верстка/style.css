@@ -1,511 +1,528 @@
 :root {
-    --orange: #ff6a6a;
+  --orange: #ff6a6a;
 }
 
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .navbar {
-    width: 100%;
-    height: 75px;
-    background-color: #222222;
-    padding-top: 30px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
+  width: 100%;
+  height: 75px;
+  background-color: #222222;
+  padding-top: 30px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
 }
 
 .navbar__nav.open {
-    position: fixed;
-    right: 0;
-    width: 232px;
-    height: calc(100vh-75px);
-    top: 75px;
-    background-color: black;
+  position: fixed;
+  right: 0;
+  width: 232px;
+  height: calc(100vh-75px);
+  top: 75px;
+  background-color: black;
 }
 
 .navbar__wrapper {
-    width: 100%;
-    max-width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 
 /*atomar class*/
 
 .float-left {
-    float: left;
+  float: left;
 }
 
 .float-right {
-    float: right;
+  float: right;
 }
 
 .text--pink {
-    color: pink;
+  color: #f16d7f; /*Уточнил цвет*/
 }
-
 
 /*atomar end*/
 
 .navbar__icon {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .navbar__icon.float-left {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .navbar__icon.float-right {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .section__wrapper {
-    width: 100%;
-    max-width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: ;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  /*background-color: ;*/
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
 }
 
 .section.section--feature {
-    background-color: #222222;
+  background-color: #222222;
 }
 
 .section--intro {
-    background: #F1E4E6;
-    height: 746px;
-    display: flex;
-    align-items: center;
-    margin-top: 75px;
+  background: #f1e4e6;
+  height: 746px;
+  display: flex;
+  align-items: center;
+  width: 100%; /*заполняем на всю ширину*/
+  margin-top: 75px;
 }
 
 .intro__foto {
-    max-height: 100%;
-    width: auto;
-    background-color: #F8F8F8;
+  max-height: 100%;
+  max-width: 50%;
+  width: auto;
+  background-color: #f8f8f8;
 }
 
 .intro__brand {
-    margin-left: 64px;
-    position: relative;
+  margin-left: 64px;
+  position: relative;
+  font-family: "Lato", sans-serif;
 }
 
 .intro__title,
 .intro__subtitle {
-    margin;
-    0;
+  /*margin;
+    0;*/
+  margin: 0;
+}
+
+.intro__title {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
 }
 
 .intro__brand::before {
-    position: absolute;
-    content: '';
-    left: -16px;
-    width: 12px;
-    height: 100%;
-    background-color: brown;
+  position: absolute;
+  content: "";
+  left: -16px;
+  width: 12px;
+  height: 100%;
+  background-color: #f16d7f;
 }
 
 .foto__2 {
-    background-color: #F7E4E2;
+  background-color: #f7e4e2;
 }
-
 
 /*Button*/
 
 .but {
-    outline: none;
-    border: 1px solid var(--orange);
-    background: none;
-    height: 47px;
-    min-width: 100px;
-    max-width: 211px;
-    padding-left: 39px;
-    padding-right: 39px;
-    cursor: pointer;
-    color: var(--orange);
-    transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+  outline: none;
+  border: 1px solid var(--orange);
+  background: none;
+  height: 47px;
+  min-width: 100px;
+  max-width: 211px;
+  padding-left: 39px;
+  padding-right: 39px;
+  cursor: pointer;
+  color: var(--orange);
+  transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
 }
 
 .but:hover {
-    color: #ffffff;
-    background: #FF6A6A;
+  color: #ffffff;
+  background: #ff6a6a;
 }
-
 
 /*Offers*/
 
 .for__wrapper {
-    width: 1140px;
-    margin-top: 64px;
+    display: flex; /*Было правильно, но с флексами это в разы проще*/
+    margin-top: 20px;
 }
 
 .forwomen {
-    float: left;
-    width: 360px;
-    height: 260px;
-    background-image: url(img/forwomen.png);
-    background-color: rgba(33, 22, 22, 0.7);
-    background-blend-mode: darken;
-    margin-right: 30px;
+  /* float: left; */
+  width: 360px;
+  height: 260px;
+  background-image: url(img/forwomen.png);
+  background-color: rgba(33, 22, 22, 0.7);
+  background-blend-mode: darken;
+  margin-right: 30px;
 }
 
 .formen {
-    float: left;
-    width: 360px;
-    height: 260px;
-    background-image: url(img/formen.png);
-    background-color: rgba(33, 22, 22, 0.7);
-    background-blend-mode: darken;
-    margin-right: 30px;
+  /*float: left;*/
+  width: 360px;
+  height: 260px;
+  background-image: url(img/formen.png);
+  background-color: rgba(33, 22, 22, 0.7);
+  background-blend-mode: darken;
+  margin-right: 30px;
 }
 
 .forkids {
-    float: left;
-    width: 360px;
-    height: 260px;
-    background-image: url(img/forkids.png);
-    background-color: rgba(33, 22, 22, 0.7);
-    background-blend-mode: darken;
+  /*float: left;*/
+  width: 360px;
+  height: 260px;
+  background-image: url(img/forkids.png);
+  background-color: rgba(33, 22, 22, 0.7);
+  background-blend-mode: darken;
 }
 
 .foraccesor {
-    width: 1140px;
-    height: 180px;
-    background-image: url(img/foraccsesuar.png);
-    background-color: rgba(33, 22, 22, 0.7);
-    background-blend-mode: darken;
-    margin-top: 30px;
+  /*width: 1140px;*/
+  max-width: 1140px; /*Одно из правил адаптива - мы почти никогда не фиксируем ширину в пикселях*/
+  width: 100%;
+  height: 180px;
+  background-image: url(img/foraccsesuar.png);
+  background-color: rgba(33, 22, 22, 0.7);
+  background-blend-mode: darken;
+  margin-top: 30px;
 }
 
 .offers__suptitle {
-    font-family: Lato;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    text-transform: uppercase;
-    color: white;
-    margin-top: 100px;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  /*margin-top: 100px;*/ /*Вместо этого*/
+}
+
+.for__wrapper > *,
+.foraccesor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .offers__title {
-    font-family: Lato;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    text-transform: uppercase;
-    color: pink;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: pink;
 }
-
 
 /*Items*/
 
 .items__title {
-    font-family: Lato;
-    font-size: 30px;
-    line-height: 36px;
+  font-family: Lato;
+  font-size: 30px;
+  line-height: 36px;
 }
 
 .items__subtitle {
-    font-family: Lato;
-    font-size: 14px;
-    line-height: 17px;
-    color: #9F9F9F;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9f9f9f;
 }
 
 .items__card {
-    float: left;
-    width: 360px;
-    height: 581px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px;
+  float: left;
+  width: 360px;
+  height: 581px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
 }
 
 .card__img {
-    width: 360px;
-    height: 420px;
-    background-image: var(--bg-img);
-    background-size: cover;
+  width: 360px;
+  height: 420px;
+  background-image: var(--bg-img);
+  background-size: cover;
 }
 
 .card__caption {
-    padding: 20px 29px 20px 17px;
-    background: #f8f8f8;
+  padding: 20px 29px 20px 17px;
+  background: #f8f8f8;
 }
 
 .card__name {
-    font-family: Lato;
-    text-transform: uppercase;
-    font-size: 13px;
-    line-height: 16px;
-    color: #000000;
-    margin-bottom: 13px;
+  font-family: Lato;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+  margin-bottom: 13px;
 }
 
 .card__description {
-    font-family: Lato;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: #5D5D5D;
-    margin-bottom: 18px;
-    margin-top: 0px;
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5d5d5d;
+  margin-bottom: 18px;
+  margin-top: 0px;
 }
 
 .card__price {
-    font-family: Lato;
-    font-size: 16px;
-    line-height: 19px;
-    color: #F16D7F;
-    margin: 0;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f16d7f;
+  margin: 0;
 }
-
 
 /*Futuree*/
 
 .wrapper__future {
-    height: 341px;
-    width: 100%;
-    border-color: #222224;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
+  height: 341px;
+  width: 100%;
+  max-width: 1140px; /*Надо ограничить максимальную ширину блока*/
+  margin: 0 auto;
+  border-color: #222224;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
 }
 
 .future__title {
-    font-family: Lato;
-    font-size: 19.96px;
-    line-height: 24px;
-    color: #FBFBFB;
+  font-family: Lato;
+  font-size: 19.96px;
+  line-height: 24px;
+  color: #fbfbfb;
 }
 
 .future__content {
-    font-family: Lato;
-    font-weight: 300;
-    font-size: 13.972px;
-    line-height: 17px;
-    color: #FBFBFB;
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 13.972px;
+  line-height: 17px;
+  color: #fbfbfb;
 }
-
 
 /*For enter button*/
 
 .d-flex {
-    display: flex;
-    height: 40px;
-    justify-content: center;
+  display: flex;
+  height: 40px;
+  justify-content: center;
 }
 
 input {
-    border-radius: 20px 0 0 20px;
-    border: none;
-    background: #E1E1E1;
-    padding: 0 20px;
-    outline: none;
+  border-radius: 20px 0 0 20px;
+  border: none;
+  background: #e1e1e1;
+  padding: 0 20px;
+  outline: none;
 }
 
 .butt {
-    border-radius: 0 20px 20px 0;
-    border: none;
-    padding: 0 20px;
-    background: #da7179;
-    color: #fff;
-    outline: none;
+  border-radius: 0 20px 20px 0;
+  border: none;
+  padding: 0 20px;
+  background: #da7179;
+  color: #fff;
+  outline: none;
 }
-
 
 /*Subscribe*/
 
+.section--subscribe {
+  background-image: url(img/bc__subscribe.png); /*Фон не только на подложке, но и везде по ширине страинцы*/
+  background-position: center; /*Центрируем фон*/
+  background-size: cover; /*Растягиваем фон*/
+}
+
 .subscribe__wrapper {
-    width: 100%;
-    height: 448px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: ;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    align-items: center;
-    background-color: rgba(244, 244, 244, 0.7);
-    background-image: url(img/bc__subscribe.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: saturation;
+  width: 100%;
+  max-width: 1140px;
+  /*height: 448px;*/
+  /*min-height: 448px;*/ /*Лучше ограничивать только минимальную высоту, на мобильных может не влезть всё*/
+  margin-left: auto;
+  margin-right: auto;
+  /*background-color: ;*/
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: saturation;
 }
 
 .h3__subscribe {
-    font-family: Lato;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
-    text-align: center;
-    color: #222224;
-    text-align: center;
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #222224;
+  text-align: center;
 }
-
 
 /*Footer*/
-.foot__fig_wrapper{
-    margin-right: 230px;
+.foot__fig_wrapper {
+  margin-right: 230px;
 }
 .footer__wrapper {
-    width: 100%;
-    height: 79px;
-    background: #222224;
+  width: 100%;
+  height: 79px;
+  background: #222224;
 }
 
 .foot__fig {
-    display: flex;
-    justify-content: center;
-    margin-top: 24px;
-    margin-left: 3px;
-    margin-right: 4px;
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  margin-left: 3px;
+  margin-right: 4px;
 }
 
 .foot__copy {
-    font-family: Lato;
-    font-size: 16px;
-    line-height: 19px;
-    color: #FBFBFB;
-    margin-left: 235px;
-    margin-top: 30px;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fbfbfb;
+  margin-left: 235px;
+  margin-top: 30px;
 }
-
 
 /*Arrivals*/
 
 .section__arrivals {
-    width: 100%;
-    height: 148px;
-    background: #F8F3F4;
-    margin-top: 75px;
+  width: 100%;
+  height: 148px;
+  background: #f8f3f4;
+  margin-top: 75px;
 }
 
 .section__arrivals h1 {
-    text-align: center;
+  text-align: center;
 }
 
-.row {
-    margin-left: 230px;
-    padding-top: 59px;
-}
+/*.row {
+  margin-left: 230px;
+  padding-top: 59px;
+}*/ /*row много где используется, так делать не надо. Просто надо было обернуть блок в .section__wrapper*/
 
 .col-7.left {
-    font-family: Lato;
-    font-size: 24px;
-    line-height: 29px;
-    text-transform: uppercase;
-    color: #F16D7F;
+  font-family: Lato;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #f16d7f;
 }
 
 .col-6.right {
-    color: #636363;
+  color: #636363;
 }
-
 
 /*Cards*/
 
 .card__navbar {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 51px;
-    margin-bottom: 54px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 51px;
+  margin-bottom: 54px;
 }
 
 .pagination {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-
 /*Product*/
-
 
 /*Caurusel*/
 
 .section__carousel {
-    width: 100%;
-    height: 777px;
-    background-image: url(img/foto_caurusel.png);
-    background-size: cover;
-    background-color: #F7F7F7;
-    background-blend-mode: darken;
+  width: 100%;
+  height: 777px;
+  background-image: url(img/foto_caurusel.png);
+  background-size: cover;
+  background-color: #f7f7f7;
+  background-blend-mode: darken;
 }
 
 .choose__card {
-    z-index: 3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    margin-left: 230px;
-    margin-right: 230px;
-    margin-top: -60px;
-    max-width: 1141px;
-    max-height: 601px;
-    background-color: #FFFFFF;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  /*margin-left: 230px;
+  margin-right: 230px;*/
+  margin-left: auto; /*Адаптив начинается там, где заканчивается подсчёт в пикселях*/
+  margin-right: auto;
+  margin-top: -60px;
+  max-width: 1140px;
+  max-height: 600px;
+  background-color: #ffffff;
 }
 
 .sup_title__choose {
-    font-family: Lato;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    color: #5E5E5E;
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #5e5e5e;
 }
 
 .title_red {
-    font-family: Lato;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: #F16D7F;
-    margin-bottom: 12пше ggpx;
-    margin-top: 64px;
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #f16d7f;
+  margin-bottom: 12пше ggpx;
+  margin-top: 64px;
 }
 
 .title__choose {
-    font-family: Lato;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 22px;
-    color: #4D4D4D;
-    text-align: center;
-    margin-top: -20px;
-    margin-bottom: 38px;
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4d4d4d;
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 38px;
 }
 
 .choose__nav {
-    margin-top: 65px;
-    margin-bottom: 48px;
-    font-family: Lato;
-    font-size: 14px;
-    line-height: 17px;
-    color: #6F6E6E;
+  margin-top: 65px;
+  margin-bottom: 48px;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6f6e6e;
 }
 
 .choose_price {
-    margin-bottom: 50px;
-    font-family: Lato;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 29px;
-    color: #EF5B70;
+  margin-bottom: 50px;
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 29px;
+  color: #ef5b70;
 }
-.btn{
-    width: 211px;
-    height: 47px;
-    margin-bottom: 100px;
+.btn {
+  width: 211px;
+  height: 47px;
+  margin-bottom: 100px;
 }
