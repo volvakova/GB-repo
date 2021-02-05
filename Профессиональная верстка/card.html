@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Каталог</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_card.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="navbar__wrapper">
+        <div class="navbar__icon float-left">
+          <img src="img/Group%202.svg" alt="" />
+        </div>
+        <div class="navbar__icon float-left">
+          <img src="img/Forma%201.svg" alt="" />
+        </div>
+        <div class="navbar__icon float-right">
+          <img src="img/Forma%201%20(1).svg" alt="" />
+        </div>
+        <div class="navbar__icon float-right">
+          <img src="img/Forma%201%20(2).svg" alt="" />
+        </div>
+        <div class="navbar__icon float-right">
+          <img src="img/Forma%201%20(3).svg" alt="" />
+        </div>
+        <nav class="navbar__nav open"></nav>
+      </div>
+    </header>
+    <section class="section__arrivals">
+      <div class="section__wrapper">
+        <!--Обёртки не должны пропадать!-->
+
+        <div class="row no-gutters">
+          <div class="col-7 left text-left">New arrivals</div>
+          -
+        </div>
+      </div>
+    </section>
+    <section class="cards__wrapper">
+      <div class="section__wrapper">
+        <div class="row no-gutters text-left">
+          <div class="card__left col-12 col-md-6">
+            <div class="cart__item">
+              <div class="cart__item_description">
+                <!--Почему тут был card__left_wrapper, я не понимаю-->
+                <h4 class="cart__item_tittle">
+                  <a class="cart__link" href="./product.html">
+                    MANGO PEOPLE T-SHIRT
+                  </a>
+                </h4>
+                <div class="cart__content">
+                  <a href="#">
+                    <img src="img/foto_card-1.png" alt="" />
+                  </a>
+                  <div>
+                    <p class="cart__item_info"
+                      >Price:<span class="cart__item_pice"> $300 </span></p
+                    >
+                    <p class="cart__item_info"
+                      >Color:<span> Red </span></p
+                    >
+                    <p class="cart__item_info">Size:<span> Xl </span></p>
+                    <p class="cart__item_info">
+                      Quantity:
+                      <input
+                        class="cart__item_quantity"
+                        type="number"
+                        name="quantity"
+                        id="quantity1"
+                        min="1"
+                        value="2"
+                        required
+                    /></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Вторую карточку надо привести к тому же виду, что и первую. p, вместо span потому что каждая строка текста, по сути, отдельный абзац-->
+            <div class="cart__item">
+              <div class="cart__item_description">
+                <h4 class="cart__item_tittle text-left">
+                  <a class="cart__link text-left" href="./product.html">
+                    MANGO PEOPLE T-SHIRT
+                  </a>
+                </h4>
+                <a href="#">
+                  <img src="img/foto_card-2.png" alt="" />
+                </a>
+                <span class="cart__item_info"
+                  >Price:<span class="cart__item_pice"> $300 </span></span
+                >
+                <span class="cart__item_info">Color:<span> Red </span></span>
+                <span class="cart__item_info">Size:<span> Xl </span></span>
+                <span class="cart__item_info">
+                  Quantity:
+                  <input
+                    class="cart__item_quantity"
+                    type="number"
+                    name="quantity"
+                    id="quantity2"
+                    min="1"
+                    value="2"
+                    required
+                  />
+                </span>
+              </div>
+            </div>
+            <div class="cart__input">
+              <a class="button cart__input_link" href="#"
+                >CLEAR SHOPPING CART</a
+              >
+              <a class="button cart__input_link" href="#">CONTINUE SHOPPING</a>
+            </div>
+          </div>
+          <form class="cart__right col-12 col-md-6">
+            <h4 class="cart__right_title">SHIPPING ADRESS</h4>
+            <div class="cart__right_row">
+              <div class="cart__right_box1">
+                <input
+                  class="cart__right_input"
+                  type="text"
+                  name="bangladesh"
+                  id="bangladesh"
+                  placeholder="Bangladesh"
+                  required
+                />
+                <input
+                  class="cart__right_input"
+                  type="text"
+                  name="state"
+                  id="state"
+                  placeholder="State"
+                  required
+                />
+                <input
+                  class="cart__right_input"
+                  type="number"
+                  name="postcode"
+                  id="postcode"
+                  placeholder="Postcode / Zip"
+                  required
+                />
+                <button class="button cart__right_button" type="submit">
+                  GET A QUOTE
+                </button>
+              </div>
+              <div class="cart__right_box2">
+                <div class="cart__right_sub">
+                  <span>SUB TOTAL</span
+                  ><span class="cart__right_sub-price">$900</span>
+                </div>
+                <div class="cart__right_grand">
+                  <span>GRAND TOTAL</span
+                  ><span class="cart__right_grand-price">$900</span>
+                </div>
+                <div class="cart__right_line"></div>
+                <button class="button cart__right_button2" type="submit">
+                  PROCEED TO CHECKOUT
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="section section--subscribe">
+      <div class="subscribe__wrapper">
+        <div class="subscribe__comment">
+          <img src="img/subscribe_foto.png" alt="" />
+          <p>
+            “Vestibulum quis porttitor dui! Quisque <br />
+            viverra nunc mi, a pulvinar purus <br />condimentum“
+          </p>
+        </div>
+        <div class="subscribe__enter">
+          <h3 class="h3__sudscribe">
+            <span class="text__subscribe">SUBSCRIBE </span><br />
+            FOR OUR NEWLETTER AND PROMOTION
+          </h3>
+          <div class="d-flex">
+            <input placeholder="Enter your email" />
+            <button class="butt">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="foot__copy float-left">
+          © 2021 Brand All Rights Reserved.
+        </div>
+        <div class="foot__fig_wrapper">
+          <figure class="foot__fig float-right">
+            <a href="#"><img src="img/foot_fb.png" alt="" /> </a>
+          </figure>
+          <figure class="foot__fig float-right">
+            <a href="#"><img src="img/foot_inst.png" alt="" /> </a>
+          </figure>
+          <figure class="foot__fig float-right">
+            <a href="#"><img src="img/foot_pint.png" alt="" /> </a>
+          </figure>
+          <figure class="foot__fig float-right">
+            <a href="#"><img src="img/foot_twit.png" alt="" /> </a>
+          </figure>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

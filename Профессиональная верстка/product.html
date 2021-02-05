@@ -2,81 +2,134 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Shop</title>
-
-    <!--<link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
+    <title>Каталог</title>
     <link
       rel="stylesheet"
-      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
-    />--> <!--Порядок подключения имеет значение. сначала всякие библиотеки, потом свой файл-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    /> <!--шрифты лучше повыше, они сначала будут загружаться, а в это время остальной контент начнёт перерисовываться-->
-    <link
-      rel="stylesheet"
-      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
     <header class="navbar">
-        <div class="navbar__wrapper">
-            <div class="navbar__icon "><img src="img/Group%202.svg" alt=""></div>
-            <div class="navbar__icon "><img src="img/Forma%201.svg" alt=""></div>
-            <div class="spacer"></div>
-            <div class="navbar__icon burger "><img src="img/Forma%201%20(1).svg" alt=""></div>
-            <div class="navbar__icon "><img src="img/Forma%201%20(2).svg" alt=""></div>
-            <div class="navbar__icon"><img src="img/Forma%201%20(3).svg" alt=""></div>
-            <nav class="navbar__nav open"></nav>
+      <div class="navbar__wrapper">
+        <div class="navbar__icon float-left">
+          <img src="img/Group%202.svg" alt="" />
+        </div>
+        <div class="navbar__icon float-left">
+          <img src="img/Forma%201.svg" alt="" />
+        </div>
+        <div class="navbar__icon float-right">
+          <img src="img/Forma%201%20(1).svg" alt="" />
+        </div>
+        <div class="navbar__icon float-right">
+          <img src="img/Forma%201%20(2).svg" alt="" />
+        </div>
+        <div class="navbar__icon float-right">
+          <img src="img/Forma%201%20(3).svg" alt="" />
         </div>
         <nav class="navbar__nav open"></nav>
       </div>
     </header>
-    <section class="section section--intro">
-      <img src="img/intro__foto.png" alt="" class="intro__foto" />
-      <div class="intro__brand">
-        <div class="intro__title">THE BRAND</div>
-        <div class="intro__subtitle">
-          OF LUXERIOUS <span class="text--pink">FASHION</span>
+    <section class="section__arrivals">
+      <div class="section__wrapper">
+        <div class="row no-gutters">
+          <div class="col-7 left">New arrivals</div>
+          <div class="col-3 right">
+            HOME / MEN / NEW <span class="left">ARRIVALS</span>
+          </div>
         </div>
       </div>
     </section>
-    <section class="section section--offers">
-      <div class="section__wrapper">
-        <div class="for__wrapper">
-          <div class="forwomen">
-            <p class="offers__suptitle">30 % OFF</p>
-            <h1 class="offers__title">For women</h1>
-          </div>
-          <div class="formen">
-            <p class="offers__suptitle">Hot deal</p>
-            <h1 class="offers__title">for men</h1>
-          </div>
-          <div class="forkids">
-            <p class="offers__suptitle">new arrivals</p>
-            <h1 class="offers__title">For kids</h1>
-          </div>
+    <section class="section__card">
+      <div class="card__navbar">
+        <div class="filter float-left">
+          Filter <img src="img/menu__navbar__card.svg" alt="" />
         </div>
-        <div class="foraccesor">
-          <p class="offers__suptitle">Luxirous & Trendy</p>
-          <h1 class="offers__title">Accesories</h1>
+        <div class="trend float-right">
+          TRENDING NOW <img src="img/galochka.svg" alt="" /> SIZE
+          <img src="img/galochka.svg" alt="" /> PRICE
+          <img src="img/galochka.svg" alt="" />
         </div>
       </div>
     </section>
-    <section class="section section--items">
+    <section class="section__carousel">
       <div class="section__wrapper">
-        <h2 class="items__title">Featured Items</h2>
-        <h3 class="items__subtitle">
-          Shop for items based on what we featured in this week
-        </h3>
+        <div
+          id="carouselExampleDark"
+          class="carousel carousel-dark slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000"></div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            style="color: black"
+            href="#carouselExampleDark"
+            role="button"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleDark"
+            role="button"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="choose__card">
+      <div class="sub_title__choose">
+        <h2 class="title_red">WOMEN COLLECTION</h2>
+      </div>
+      <img class="red_line" src="img/red_line.png" alt="" />
+      <div class="title__choose"><h1>MOSCHINO CHEAP AND CHIC</h1></div>
+      <div class="sup_title__choose">
+        <p>
+          Compellingly actualize fully researched processes before proactive
+          outsourcing. Progressively syndicate collaborative architectures
+          before cutting-edge services. Completely visualize parallel core
+          competencies rather than exceptional portals.
+        </p>
+      </div>
+      <div class="choose_price"><h1>$561</h1></div>
+      <img class="gray_line" src="img/gray_line.png" alt="" />
+      <div class="choose__nav">
+        <div class="trend float-right">
+          CHOOSE COLOR <img src="img/galochka.svg" alt="" /> CHOOSE SIZE
+          <img src="img/galochka.svg" alt="" /> QUANTITY
+          <img src="img/galochka.svg" alt="" />
+        </div>
+      </div>
+      <button type="button" class="btn btn-outline-danger">
+        <img src="img/Basket_chop.png" alt="" />Add to Cart
+      </button>
+    </section>
+    <section class="srction section--items">
+      <div class="section__wrapper">
         <div class="items__cards">
           <figure class="items__card card">
             <div class="card__img" style="--bg-img: url(img/liudi1.png)"></div>
@@ -93,7 +146,7 @@
           <figure class="items__card card">
             <div
               class="card__img foto__2"
-              style="--bg-img: url(img/liudi2.png)"
+              style="--bg-img: url(img/liudi8.png)"
             ></div>
             <figcaption class="card__caption">
               <h4 class="card__name">ELLERY X M'O CAPSULE</h4>
@@ -117,44 +170,7 @@
               <h5 class="card__price">$52.00</h5>
             </figcaption>
           </figure>
-          <figure class="items__card card">
-            <div class="card__img" style="--bg-img: url(img/liudi4.png)"></div>
-            <figcaption class="card__caption">
-              <h4 class="card__name">ELLERY X M'O CAPSULE</h4>
-              <p class="card__description">
-                Known for her sculptural takes on traditional tailoring,
-                Australian arbiter of cool Kym Ellery teams up with Moda
-                Operandi.
-              </p>
-              <h5 class="card__price">$52.00</h5>
-            </figcaption>
-          </figure>
-          <figure class="items__card card">
-            <div class="card__img" style="--bg-img: url(img/liudi5.png)"></div>
-            <figcaption class="card__caption">
-              <h4 class="card__name">ELLERY X M'O CAPSULE</h4>
-              <p class="card__description">
-                Known for her sculptural takes on traditional tailoring,
-                Australian arbiter of cool Kym Ellery teams up with Moda
-                Operandi.
-              </p>
-              <h5 class="card__price">$52.00</h5>
-            </figcaption>
-          </figure>
-          <figure class="items__card card">
-            <div class="card__img" style="--bg-img: url(img/liudi6.png)"></div>
-            <figcaption class="card__caption">
-              <h4 class="card__name">ELLERY X M'O CAPSULE</h4>
-              <p class="card__description">
-                Known for her sculptural takes on traditional tailoring,
-                Australian arbiter of cool Kym Ellery teams up with Moda
-                Operandi.
-              </p>
-              <h5 class="card__price">$52.00</h5>
-            </figcaption>
-          </figure>
         </div>
-        <button class="but">Browse All Product</button>
       </div>
     </section>
     <section class="section section--feature">
@@ -163,7 +179,7 @@
           <img src="img/img_delivery.png" alt="" />
           <h2 class="future__title">Free Delivery</h2>
           <p class="future__content">
-            Worldwide delivery on all. Authorit tively morph<br />
+            Worldwide delivery on all. Authorit tively morph <br />
             next-generation innov tion with extensive models.
           </p>
         </div>
@@ -186,7 +202,7 @@
       </div>
     </section>
     <section class="section section--subscribe">
-      <div class="subscribe__wrapper"> <!--Раньше везде были section__wrspper, тут появился новый отдельный класс. Нужен ли он?-->
+      <div class="subscribe__wrapper">
         <div class="subscribe__comment">
           <img src="img/subscribe_foto.png" alt="" />
           <p>
