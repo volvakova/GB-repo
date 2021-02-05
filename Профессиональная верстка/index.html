@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Shop</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> </head>
+    <!--<link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />--> <!--Порядок подключения имеет значение. сначала всякие библиотеки, потом свой файл-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    /> <!--шрифты лучше повыше, они сначала будут загружаться, а в это время остальной контент начнёт перерисовываться-->
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <header class="navbar">
         <div class="navbar__wrapper">
             <div class="navbar__icon "><img src="img/Group%202.svg" alt=""></div>
@@ -21,125 +37,195 @@
             <div class="navbar__icon"><img src="img/Forma%201%20(3).svg" alt=""></div>
             <nav class="navbar__nav open"></nav>
         </div>
+        <nav class="navbar__nav open"></nav>
+      </div>
     </header>
-    <section class="section section--intro"> <img src="img/intro__foto.png" alt="" class="intro__foto">
-        <div class="intro__brand">
-            <div class="intro__title">THE BRAND</div>
-            <div class="intro__subtitle">OF LUXERIOUS <span class="text--pink">FASHION</span></div>
+    <section class="section section--intro">
+      <img src="img/intro__foto.png" alt="" class="intro__foto" />
+      <div class="intro__brand">
+        <div class="intro__title">THE BRAND</div>
+        <div class="intro__subtitle">
+          OF LUXERIOUS <span class="text--pink">FASHION</span>
         </div>
+      </div>
     </section>
     <section class="section section--offers">
-        <div class="section__wrapper">
-            <div class="for__wrapper">
-                <div class="forwomen">
-                    <p class="offers__suptitle">30 % OFF</p>
-                    <h1 class="offers__title">For women</h1> </div>
-                <div class="formen">
-                    <p class="offers__suptitle">Hot deal</p>
-                    <h1 class="offers__title">for men</h1> </div>
-                <div class="forkids">
-                    <p class="offers__suptitle">new arrivals</p>
-                    <h1 class="offers__title">For kids</h1> </div>
-            </div>
-            <div class="foraccesor">
-                <p class="offers__suptitle">Luxirous & Trendy</p>
-                <h1 class="offers__title">Accesories</h1> </div>
+      <div class="section__wrapper">
+        <div class="for__wrapper">
+          <div class="forwomen">
+            <p class="offers__suptitle">30 % OFF</p>
+            <h1 class="offers__title">For women</h1>
+          </div>
+          <div class="formen">
+            <p class="offers__suptitle">Hot deal</p>
+            <h1 class="offers__title">for men</h1>
+          </div>
+          <div class="forkids">
+            <p class="offers__suptitle">new arrivals</p>
+            <h1 class="offers__title">For kids</h1>
+          </div>
         </div>
+        <div class="foraccesor">
+          <p class="offers__suptitle">Luxirous & Trendy</p>
+          <h1 class="offers__title">Accesories</h1>
+        </div>
+      </div>
     </section>
-    <section class="srction section--items">
-        <div class="section__wrapper">
-            <h2 class="items__title">Featured Items</h2>
-            <h3 class="items__subtitle">Shop for items based on what we featured in this week</h3>
-            <div class="items__cards">
-                <figure class="items__card card">
-                    <div class="card__img" style="--bg-img: url(img/liudi1.png)"></div>
-                    <figcaption class="card__caption">
-                        <h4 class="card__name">ELLERY X M'O CAPSULE</h4>
-                        <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <h5 class="card__price">$52.00</h5> </figcaption>
-                </figure>
-                <figure class="items__card card">
-                    <div class="card__img foto__2" style="--bg-img: url(img/liudi2.png) "></div>
-                    <figcaption class="card__caption">
-                        <h4 class="card__name">ELLERY X M'O CAPSULE</h4>
-                        <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <h5 class="card__price">$52.00</h5> </figcaption>
-                </figure>
-                <figure class="items__card card">
-                    <div class="card__img" style="--bg-img: url(img/liudi3.png)"></div>
-                    <figcaption class="card__caption">
-                        <h4 class="card__name">ELLERY X M'O CAPSULE</h4>
-                        <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <h5 class="card__price">$52.00</h5> </figcaption>
-                </figure>
-                <figure class="items__card card">
-                    <div class="card__img" style="--bg-img: url(img/liudi4.png)"></div>
-                    <figcaption class="card__caption">
-                        <h4 class="card__name">ELLERY X M'O CAPSULE</h4>
-                        <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <h5 class="card__price">$52.00</h5> </figcaption>
-                </figure>
-                <figure class="items__card card">
-                    <div class="card__img" style="--bg-img: url(img/liudi5.png)"></div>
-                    <figcaption class="card__caption">
-                        <h4 class="card__name">ELLERY X M'O CAPSULE</h4>
-                        <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <h5 class="card__price">$52.00</h5> </figcaption>
-                </figure>
-                <figure class="items__card card">
-                    <div class="card__img" style="--bg-img: url(img/liudi6.png)"> </div>
-                    <figcaption class="card__caption">
-                        <h4 class="card__name">ELLERY X M'O CAPSULE</h4>
-                        <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <h5 class="card__price">$52.00</h5> </figcaption>
-                </figure>
-            </div>
-            <button class="but">Browse All Product</button>
+    <section class="section section--items">
+      <div class="section__wrapper">
+        <h2 class="items__title">Featured Items</h2>
+        <h3 class="items__subtitle">
+          Shop for items based on what we featured in this week
+        </h3>
+        <div class="items__cards">
+          <figure class="items__card card">
+            <div class="card__img" style="--bg-img: url(img/liudi1.png)"></div>
+            <figcaption class="card__caption">
+              <h4 class="card__name">ELLERY X M'O CAPSULE</h4>
+              <p class="card__description">
+                Known for her sculptural takes on traditional tailoring,
+                Australian arbiter of cool Kym Ellery teams up with Moda
+                Operandi.
+              </p>
+              <h5 class="card__price">$52.00</h5>
+            </figcaption>
+          </figure>
+          <figure class="items__card card">
+            <div
+              class="card__img foto__2"
+              style="--bg-img: url(img/liudi2.png)"
+            ></div>
+            <figcaption class="card__caption">
+              <h4 class="card__name">ELLERY X M'O CAPSULE</h4>
+              <p class="card__description">
+                Known for her sculptural takes on traditional tailoring,
+                Australian arbiter of cool Kym Ellery teams up with Moda
+                Operandi.
+              </p>
+              <h5 class="card__price">$52.00</h5>
+            </figcaption>
+          </figure>
+          <figure class="items__card card">
+            <div class="card__img" style="--bg-img: url(img/liudi3.png)"></div>
+            <figcaption class="card__caption">
+              <h4 class="card__name">ELLERY X M'O CAPSULE</h4>
+              <p class="card__description">
+                Known for her sculptural takes on traditional tailoring,
+                Australian arbiter of cool Kym Ellery teams up with Moda
+                Operandi.
+              </p>
+              <h5 class="card__price">$52.00</h5>
+            </figcaption>
+          </figure>
+          <figure class="items__card card">
+            <div class="card__img" style="--bg-img: url(img/liudi4.png)"></div>
+            <figcaption class="card__caption">
+              <h4 class="card__name">ELLERY X M'O CAPSULE</h4>
+              <p class="card__description">
+                Known for her sculptural takes on traditional tailoring,
+                Australian arbiter of cool Kym Ellery teams up with Moda
+                Operandi.
+              </p>
+              <h5 class="card__price">$52.00</h5>
+            </figcaption>
+          </figure>
+          <figure class="items__card card">
+            <div class="card__img" style="--bg-img: url(img/liudi5.png)"></div>
+            <figcaption class="card__caption">
+              <h4 class="card__name">ELLERY X M'O CAPSULE</h4>
+              <p class="card__description">
+                Known for her sculptural takes on traditional tailoring,
+                Australian arbiter of cool Kym Ellery teams up with Moda
+                Operandi.
+              </p>
+              <h5 class="card__price">$52.00</h5>
+            </figcaption>
+          </figure>
+          <figure class="items__card card">
+            <div class="card__img" style="--bg-img: url(img/liudi6.png)"></div>
+            <figcaption class="card__caption">
+              <h4 class="card__name">ELLERY X M'O CAPSULE</h4>
+              <p class="card__description">
+                Known for her sculptural takes on traditional tailoring,
+                Australian arbiter of cool Kym Ellery teams up with Moda
+                Operandi.
+              </p>
+              <h5 class="card__price">$52.00</h5>
+            </figcaption>
+          </figure>
         </div>
+        <button class="but">Browse All Product</button>
+      </div>
     </section>
     <section class="section section--feature">
-        <div class="wrapper__future">
-            <div class="delivery"> 
-                <img src="img/img_delivery.png" alt="">
-                <h2 class="future__title">Free Delivery</h2>
-                <p class="future__content">Worldwide delivery on all. Authorit tively morph<br> next-generation innov tion with extensive models.</p>
-            </div>
-            <div class="sales"> 
-                <img src="img/img_sales.png" alt="">
-                <h2 class="future__title">Sales & discounts</h2>
-                <p class="future__content">Worldwide delivery on all. Authorit tively morph <br>next-generation innov tion with extensive models.</p>
-            </div>
-            <div class="quality"> 
-                <img src="img/img_quality.png" alt="">
-                <h2 class="future__title">Quality assurance</h2>
-                <p class="future__content">Worldwide delivery on all. Authorit tively morph <br> next-generation innov tion with extensive models.</p>
-            </div>
+      <div class="wrapper__future">
+        <div class="delivery">
+          <img src="img/img_delivery.png" alt="" />
+          <h2 class="future__title">Free Delivery</h2>
+          <p class="future__content">
+            Worldwide delivery on all. Authorit tively morph<br />
+            next-generation innov tion with extensive models.
+          </p>
         </div>
+        <div class="sales">
+          <img src="img/img_sales.png" alt="" />
+          <h2 class="future__title">Sales & discounts</h2>
+          <p class="future__content">
+            Worldwide delivery on all. Authorit tively morph
+            <br />next-generation innov tion with extensive models.
+          </p>
+        </div>
+        <div class="quality">
+          <img src="img/img_quality.png" alt="" />
+          <h2 class="future__title">Quality assurance</h2>
+          <p class="future__content">
+            Worldwide delivery on all. Authorit tively morph <br />
+            next-generation innov tion with extensive models.
+          </p>
+        </div>
+      </div>
     </section>
-    <section class="section section--subscribs">
-        <div class="subscribe__wrapper">
-            <div class="subscribe__comment"><img src="img/subscribe_foto.png" alt="">
-            <p>“Vestibulum quis porttitor dui! Quisque <br> viverra nunc mi, a pulvinar purus  <br>condimentum“</p></div>
-            <div class="subscribe__enter">
-                <h3 class="h3__sudscribe"><span class="text__subscribe">SUBSCRIBE </span><br>
-FOR OUR NEWLETTER AND PROMOTION</h3>
-           <div class="d-flex">
-              <input placeholder="Enter your email">
-               <button class="butt">Subscribe</button>
-           </div>
-            </div>
+    <section class="section section--subscribe">
+      <div class="subscribe__wrapper"> <!--Раньше везде были section__wrspper, тут появился новый отдельный класс. Нужен ли он?-->
+        <div class="subscribe__comment">
+          <img src="img/subscribe_foto.png" alt="" />
+          <p>
+            “Vestibulum quis porttitor dui! Quisque <br />
+            viverra nunc mi, a pulvinar purus <br />condimentum“
+          </p>
         </div>
+        <div class="subscribe__enter">
+          <h3 class="h3__sudscribe">
+            <span class="text__subscribe">SUBSCRIBE </span><br />
+            FOR OUR NEWLETTER AND PROMOTION
+          </h3>
+          <div class="d-flex">
+            <input placeholder="Enter your email" />
+            <button class="butt">Subscribe</button>
+          </div>
+        </div>
+      </div>
     </section>
     <footer class="footer">
-        <div class="footer__wrapper">
-            <div class="foot__copy float-left">© 2021  Brand  All Rights Reserved.</div>
-            <div class="foot__fig_wrapper">
-            <figure class="foot__fig float-right"><a href="#"><img src="img/foot_fb.png" alt=""> </a></figure>
-            <figure class="foot__fig float-right"><a href="#"><img src="img/foot_inst.png" alt=""> </a></figure>
-            <figure class="foot__fig float-right"><a href="#"><img src="img/foot_pint.png" alt=""> </a></figure>
-            <figure class="foot__fig float-right"><a href="#"><img src="img/foot_twit.png" alt=""> </a></figure>
-            </div>
+      <div class="footer__wrapper">
+        <div class="foot__copy float-left">
+          © 2021 Brand All Rights Reserved.
         </div>
+        <div class="foot__fig_wrapper">
+          <figure class="foot__fig float-right">
+            <a href="#"><img src="img/foot_fb.png" alt="" /> </a>
+          </figure>
+          <figure class="foot__fig float-right">
+            <a href="#"><img src="img/foot_inst.png" alt="" /> </a>
+          </figure>
+          <figure class="foot__fig float-right">
+            <a href="#"><img src="img/foot_pint.png" alt="" /> </a>
+          </figure>
+          <figure class="foot__fig float-right">
+            <a href="#"><img src="img/foot_twit.png" alt="" /> </a>
+          </figure>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
