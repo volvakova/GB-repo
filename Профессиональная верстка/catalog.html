@@ -15,18 +15,21 @@
 <body>
     <header class="navbar">
         <div class="navbar__wrapper">
-            <div class="navbar__icon float-left"><img src="img/Group%202.svg" alt=""></div>
-            <div class="navbar__icon float-left"><img src="img/Forma%201.svg" alt=""></div>
-            <div class="navbar__icon float-right"><img src="img/Forma%201%20(1).svg" alt=""></div>
-            <div class="navbar__icon float-right"><img src="img/Forma%201%20(2).svg" alt=""></div>
-            <div class="navbar__icon float-right"><img src="img/Forma%201%20(3).svg" alt=""></div>
+            <div class="navbar__icon"> <img src="img/logo.svg" class="navbar__img" alt=""></div>
+            <div class="navbar__icon"> <img src="img/nav_search.svg" class="navbar__img" alt=""></div>
+            <div class="spacer"></div>
+            <div class="navbar__icon"> <img src="img/nav_menu.svg" class="navbar__img burger" alt=""></div>
+            <div class="navbar__icon navbar__icon--sm"> <img src="img/nav_chel.svg" class="navbar__img" alt=""></div>
+            <div class="navbar__icon navbar__icon--sm icon--cart"> <img src="img/nav_cart.svg" class="navbar__img" alt="">
+                <div class="icon__count">5</div>
+            </div>
             <nav class="navbar__nav open"></nav>
         </div>
     </header>
     <section class="section__arrivals">
-        <div class="row">
-            <div class="col-7 left">New arrivals</div>
-            <div class="col-3 right">HOME / MEN / NEW <span class="left">ARRIVALS</span> </div>
+        <div class="arrivals__menu">
+            <div class="arrivals__title">New arrivals</div>
+            <div class="arrivals__subtitle">HOME / MEN / <span  class="red"> NEW ARRIVALS</span> </div>
         </div>
     </section>
     <section class="section__card">
@@ -125,17 +128,17 @@
             <div class="delivery"> <img src="img/img_delivery.png" alt="">
                 <h2 class="future__title">Free Delivery</h2>
                 <p class="future__content">Worldwide delivery on all. Authorit tively morph
-                    <br> next-generation innov tion with extensive models.</p>
+             next-generation innov tion with extensive models.</p>
             </div>
             <div class="sales"> <img src="img/img_sales.png" alt="">
                 <h2 class="future__title">Sales & discounts</h2>
                 <p class="future__content">Worldwide delivery on all. Authorit tively morph
-                    <br>next-generation innov tion with extensive models.</p>
+            next-generation innov tion with extensive models.</p>
             </div>
             <div class="quality"> <img src="img/img_quality.png" alt="">
                 <h2 class="future__title">Quality assurance</h2>
                 <p class="future__content">Worldwide delivery on all. Authorit tively morph
-                    <br> next-generation innov tion with extensive models.</p>
+             next-generation innov tion with extensive models.</p>
             </div>
         </div>
     </section>
@@ -150,7 +153,7 @@
                 <h3 class="h3__sudscribe"><span class="text__subscribe">SUBSCRIBE </span><br>
 FOR OUR NEWLETTER AND PROMOTION</h3>
                 <div class="d-flex">
-                    <input placeholder="Enter your email">
+                    <input class="subscribe__input" placeholder="Enter your email">
                     <button class="butt">Subscribe</button>
                 </div>
             </div>

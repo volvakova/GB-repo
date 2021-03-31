@@ -4,23 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <title>Shop</title>
-
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> </head>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="style.css"> </head>
 
 <body>
     <header class="navbar">
         <div class="navbar__wrapper">
-            <div class="navbar__icon float-left"><img src="img/Group%202.svg" alt=""></div>
-            <div class="navbar__icon float-left"><img src="img/Forma%201.svg" alt=""></div>
-            <div class="navbar__icon float-right"><img src="img/Forma%201%20(1).svg" alt=""></div>
-            <div class="navbar__icon float-right"><img src="img/Forma%201%20(2).svg" alt=""></div>
-            <div class="navbar__icon float-right"><img src="img/Forma%201%20(3).svg" alt=""></div>
+            <div class="navbar__icon"> <img src="img/logo.svg" class="navbar__img" alt=""></div>
+            <div class="navbar__icon"> <img src="img/nav_search.svg" class="navbar__img" alt=""></div>
+            <div class="spacer"></div>
+            <div class="navbar__icon"> <img src="img/nav_menu.svg" class="navbar__img burger" alt=""></div>
+            <div class="navbar__icon navbar__icon--sm"> <img src="img/nav_chel.svg" class="navbar__img" alt=""></div>
+            <div class="navbar__icon navbar__icon--sm icon--cart"> <img src="img/nav_cart.svg" class="navbar__img" alt="">
+                <div class="icon__count">5</div>
+            </div>
             <nav class="navbar__nav open"></nav>
         </div>
     </header>
+    <div class="overllay">
+        <div class="menu">
+            <div class="menu__close"><img src="img/menu__close.png" alt=""></div>
+            <div class="menu__title">MENU</div>
+            <div class="menu__listLinks">
+                <div class="menu__titleLinks"> 
+                   <a href="#" class="menu__titleLink">Man</a>
+                    <div class="menu__subtitleLinks">
+                     <a href="#" class="menu__subtitleLink">Accessories</a> 
+                     <a href="#" class="menu__subtitleLink">Bags</a> 
+                     <a href="#" class="menu__subtitleLink">Denim</a> 
+                     <a href="#" class="menu__subtitleLink">T-Shirts</a> 
+                    </div> 
+                    <a href="#" class="menu__titleLink">Woman</a>
+                     <div class="menu__subtitleLinks">
+                     <a href="#" class="menu__subtitleLink">Accessories</a> 
+                     <a href="#" class="menu__subtitleLink">Jackets & Coats</a> 
+                     <a href="#" class="menu__subtitleLink">Polos</a> 
+                     <a href="#" class="menu__subtitleLink">T-Shirts</a> 
+                     <a href="#" class="menu__subtitleLink">Shirts</a> 
+                    </div> 
+                    <a href="#" class="menu__titleLink">Kids</a>
+                    <div class="menu__subtitleLinks">
+                     <a href="#" class="menu__subtitleLink">Accessories</a> 
+                     <a href="#" class="menu__subtitleLink">Jackets & Coats</a> 
+                     <a href="#" class="menu__subtitleLink">Polos</a> 
+                     <a href="#" class="menu__subtitleLink">T-Shirts</a> 
+                     <a href="#" class="menu__subtitleLink">Shirts</a>
+                     <a href="#" class="menu__subtitleLink">Bags</a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="section section--intro"> <img src="img/intro__foto.png" alt="" class="intro__foto">
         <div class="intro__brand">
             <div class="intro__title">THE BRAND</div>
@@ -30,22 +66,22 @@
     <section class="section section--offers">
         <div class="section__wrapper">
             <div class="for__wrapper">
-                <div class="forwomen">
+                <div class="forwomen for__phone">
                     <p class="offers__suptitle">30 % OFF</p>
                     <h1 class="offers__title">For women</h1> </div>
-                <div class="formen">
+                <div class="formen for__phone">
                     <p class="offers__suptitle">Hot deal</p>
                     <h1 class="offers__title">for men</h1> </div>
-                <div class="forkids">
+                <div class="forkids for__phone">
                     <p class="offers__suptitle">new arrivals</p>
                     <h1 class="offers__title">For kids</h1> </div>
+                <div class="foraccesor">
+                    <p class="offers__suptitle">Luxirous & Trendy</p>
+                    <h1 class="offers__title">Accesories</h1> </div>
             </div>
-            <div class="foraccesor">
-                <p class="offers__suptitle">Luxirous & Trendy</p>
-                <h1 class="offers__title">Accesories</h1> </div>
         </div>
     </section>
-    <section class="srction section--items">
+    <section class="section section--items">
         <div class="section__wrapper">
             <h2 class="items__title">Featured Items</h2>
             <h3 class="items__subtitle">Shop for items based on what we featured in this week</h3>
@@ -93,52 +129,65 @@
                         <h5 class="card__price">$52.00</h5> </figcaption>
                 </figure>
             </div>
-            <button class="but">Browse All Product</button>
+            <button class="items__but">Browse All Product</button>
         </div>
     </section>
     <section class="section section--feature">
         <div class="wrapper__future">
-            <div class="delivery"> 
-                <img src="img/img_delivery.png" alt="">
+            <div class="delivery"> <img src="img/img_delivery.png" alt="">
                 <h2 class="future__title">Free Delivery</h2>
-                <p class="future__content">Worldwide delivery on all. Authorit tively morph<br> next-generation innov tion with extensive models.</p>
+                <p class="future__content">Worldwide delivery on all. Authorit tively morph
+                next-generation innov tion with extensive models.</p>
             </div>
-            <div class="sales"> 
-                <img src="img/img_sales.png" alt="">
+            <div class="sales"> <img src="img/img_sales.png" alt="">
                 <h2 class="future__title">Sales & discounts</h2>
-                <p class="future__content">Worldwide delivery on all. Authorit tively morph <br>next-generation innov tion with extensive models.</p>
+                <p class="future__content">Worldwide delivery on all. Authorit tively morph
+                next-generation innov tion with extensive models.</p>
             </div>
-            <div class="quality"> 
-                <img src="img/img_quality.png" alt="">
+            <div class="quality"> <img src="img/img_quality.png" alt="">
                 <h2 class="future__title">Quality assurance</h2>
-                <p class="future__content">Worldwide delivery on all. Authorit tively morph <br> next-generation innov tion with extensive models.</p>
+                <p class="future__content">Worldwide delivery on all. Authorit tively morph
+                 next-generation innov tion with extensive models.</p>
             </div>
         </div>
     </section>
     <section class="section section--subscribs">
         <div class="subscribe__wrapper">
             <div class="subscribe__comment"><img src="img/subscribe_foto.png" alt="">
-            <p>“Vestibulum quis porttitor dui! Quisque <br> viverra nunc mi, a pulvinar purus  <br>condimentum“</p></div>
+                <p>“Vestibulum quis porttitor dui! Quisque
+                    <br> viverra nunc mi, a pulvinar purus
+                    <br>condimentum“</p>
+            </div>
             <div class="subscribe__enter">
                 <h3 class="h3__sudscribe"><span class="text__subscribe">SUBSCRIBE </span><br>
 FOR OUR NEWLETTER AND PROMOTION</h3>
-           <div class="d-flex">
-              <input placeholder="Enter your email">
-               <button class="butt">Subscribe</button>
-           </div>
+                <div class="d-flex">
+                    <input class="subscribe__input" placeholder="Enter your email">
+                    <button class="butt">Subscribe</button>
+                </div>
             </div>
         </div>
     </section>
     <footer class="footer">
         <div class="footer__wrapper">
-            <div class="foot__copy float-left">© 2021  Brand  All Rights Reserved.</div>
+            <div class="foot__copy">© 2021 Brand All Rights Reserved.</div>
             <div class="foot__fig_wrapper">
-            <figure class="foot__fig float-right"><a href="#"><img src="img/foot_fb.png" alt=""> </a></figure>
-            <figure class="foot__fig float-right"><a href="#"><img src="img/foot_inst.png" alt=""> </a></figure>
-            <figure class="foot__fig float-right"><a href="#"><img src="img/foot_pint.png" alt=""> </a></figure>
-            <figure class="foot__fig float-right"><a href="#"><img src="img/foot_twit.png" alt=""> </a></figure>
+                <figure class="foot__fig">
+                    <a href="#"><img src="img/foot_fb.png" alt=""> </a>
+                </figure>
+                <figure class="foot__fig">
+                    <a href="#"><img src="img/foot_inst.png" alt=""> </a>
+                </figure>
+                <figure class="foot__fig">
+                    <a href="#"><img src="img/foot_pint.png" alt=""> </a>
+                </figure>
+                <figure class="foot__fig">
+                    <a href="#"><img src="img/foot_twit.png" alt=""> </a>
+                </figure>
             </div>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
+
 </html>
