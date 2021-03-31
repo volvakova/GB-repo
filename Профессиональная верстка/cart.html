@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Продукт</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="navbar__wrapper">
+            <div class="navbar__icon"> <img src="img/logo.svg" class="navbar__img" alt=""></div>
+            <div class="navbar__icon"> <img src="img/nav_search.svg" class="navbar__img" alt=""></div>
+            <div class="spacer"></div>
+            <div class="navbar__icon"> <img src="img/nav_menu.svg" class="navbar__img burger" alt=""></div>
+            <div class="navbar__icon navbar__icon--sm"> <img src="img/nav_chel.svg" class="navbar__img" alt=""></div>
+            <div class="navbar__icon navbar__icon--sm icon--cart"> <img src="img/nav_cart.svg" class="navbar__img" alt="">
+                <div class="icon__count">5</div>
+            </div>
+            <nav class="navbar__nav open"></nav>
+        </div>
+    </header>
+    <section class="section__arrivals">
+        <div class="arrivals__menu">
+            <div class="arrivals__title">SHOPPING CART</div>
+        </div>
+    </section>
+    <div class="cart__main">
+        <div class="main__left">
+           <div class="main__wrapper_carts">
+            <div class="main__cart">
+                <img class="carts__img" src="img/liudi11.png" alt="">
+                <div class="cart__description">
+                    <h1 class="description__title">MANGO  PEOPLE <br> T-SHIRT</h1>
+                    <img class="cart__close" src="img/menu__close.png" alt="">
+                    <h2 class="description__categories">
+                        Price: $300 	<br>
+                        Color: Red <br>
+                        Size: Xl	<br>
+                        Quantity:	<input id="cart__qantity_input" type="text" value="2">
+                    </h2>
+                </div>
+            </div>
+            <div class="main__cart">
+                <img class="carts__img" src="img/liudi13.png" alt="">
+                <div class="cart__description">
+                    <h1 class="description__title">MANGO  PEOPLE <br> T-SHIRT</h1>
+                    <img class="cart__close" src="img/menu__close.png" alt="">
+                    <h2 class="description__categories">
+                        Price: $300 	<br>
+                        Color: Red <br>
+                        Size: Xl	<br>
+                        Quantity:	<input id="cart__qantity_input" type="text" value="2">
+                    </h2>
+                </div>
+            </div>
+            <div class="main__wrapper_buttons">
+            <button class="main__button">CLEAR SHOPPING CART</button>
+            <button class="main__button">CONTINUE SHOPPING</button>
+        </div>
+        </div>
+        
+        </div>
+        <div class="main__right">
+            <div class="field__adress"><h1 class="adress__title">SHIPPING ADRESS</h1>
+            <input class="adress__input-active" type="text" value="Bangladesh">
+            <input class="adress__input" type="text" value="State">
+            <input class="adress__input" type="text" value="Postcode / Zip">
+            <button class="adress__button">GET A QUOTE</button>
+            </div>
+            <div class="field__chekout">
+                <h3 class="chekout__subtitle">SUB TOTAL         $900</h3>
+                <h2 class="chekout__title">GRAND TOTAL      $900</h2>
+                <div class="chekout__hr"><img src="img/chekout__hr.png" alt=""></div>
+                <button class="chekout__button">PROCEED TO CHECKOUT</button>
+            </div>
+        </div>
+    </div>
+     <section class="section section--subscribs">
+        <div class="subscribe__wrapper">
+            <div class="subscribe__comment"><img src="img/subscribe_foto.png" alt="">
+                <p>“Vestibulum quis porttitor dui! Quisque
+                    <br> viverra nunc mi, a pulvinar purus
+                    <br>condimentum“</p>
+            </div>
+            <div class="subscribe__enter">
+                <h3 class="h3__sudscribe"><span class="text__subscribe">SUBSCRIBE </span><br>
+FOR OUR NEWLETTER AND PROMOTION</h3>
+                <div class="d-flex">
+                    <input class="subscribe__input" placeholder="Enter your email">
+                    <button class="butt">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="foot__copy">© 2021 Brand All Rights Reserved.</div>
+            <div class="foot__fig_wrapper">
+                <figure class="foot__fig">
+                    <a href="#"><img src="img/foot_fb.png" alt=""> </a>
+                </figure>
+                <figure class="foot__fig">
+                    <a href="#"><img src="img/foot_inst.png" alt=""> </a>
+                </figure>
+                <figure class="foot__fig">
+                    <a href="#"><img src="img/foot_pint.png" alt=""> </a>
+                </figure>
+                <figure class="foot__fig">
+                    <a href="#"><img src="img/foot_twit.png" alt=""> </a>
+                </figure>
+            </div>
+        </div>
+    </footer>
