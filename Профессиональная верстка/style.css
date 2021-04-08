@@ -204,7 +204,22 @@ navbar__img {
     color: #6F6E6E;
     text-decoration: none;
 }
-
+.filter_but{
+    background: none;
+    border: none
+}
+.filter__overllay{
+    width: 360px;
+    height: 531px;
+    background-image: url(img/filter__overllay.png);
+    background-size: cover;
+    position: fixed;
+    z-index: 2;
+    opacity: 0;
+}
+.filter__overllay.open {
+    opacity: 1;
+}
 .overllay {
     position: fixed;
     top: 75px;
@@ -238,6 +253,31 @@ navbar__img {
 
 
 /*Button*/
+.button-transform{
+	animation: T-animation 3s linear normal;
+}
+.button-rotate:hover {
+    transform: rotate(180deg);
+	animation: Rotate-animation 4s linear infinite normal;
+}
+
+@keyframes Rotate-animation {
+	0% {
+		transform: rotate(-180deg);
+	}
+	100% {
+		transform: rotate(180deg);
+	}
+}
+
+@keyframes T-animation {
+	0% {
+		transform: scaleX(0) scaleY(0.05);
+	}
+	100% {
+		transform: scaleX(1) scaleY(1);
+	}
+}
 
 .items__but {
     border: 1px solid var(--orange);
@@ -252,10 +292,9 @@ navbar__img {
     cursor: pointer;
     color: var(--orange);
 }
-
-.items__but:hover {
-    color: #ffffff;
-    background: #FF6A6A;
+.items__but:hover{
+    color: #f8f8f8;
+    background: var(--orange);
 }
 
 
@@ -362,7 +401,8 @@ navbar__img {
 .items__card {
     width: 360px;
     height: 581px;
-    margin: 10px;
+    margin: 20px 10px;
+    
 }
 
 .card__img {
@@ -558,10 +598,19 @@ navbar__img {
     margin-top: 51px;
     margin-bottom: 54px;
 }
-
+.page__number{
+    color: #EBEBEB;
+}
+.page__number_active{
+    color: #EF5B70;
+}
 .pagination {
     display: flex;
     justify-content: center;
+}
+.pagination__catalog{
+    text-decoration: none;
+    border: 1px solid #EBEBEB;
 }
 
 
@@ -783,7 +832,10 @@ navbar__img {
     color: #000000;
     background: #FFFFFF;
 }
-
+.main__button:hover{
+    background: #A4A4A4;
+    border: 1px solid black;
+}
 .adress__button {
     width: 100px;
     height: 34px;
